@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html><!-- Do NOT put any content outside of the HTML tags-->
+	<head>
+		<title>JayaCo - Register and Pay</title>
+		<link rel= "stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"></script>
+	</head>
+	
+    <!-- All content visible on the webpage will be inside the body tags below-->
+	<body id="regpay"> 
+		<!-- Navigation Bar -->
+		<div id="navigation">
+			<ul>
+				<li><a class="inactive" href="index.html">Home</a></li>
+				<li><a class="inactive" href="products.html">Products</a></li>
+				<li><a class="inactive" href="faq.html">FAQ</a></li>
+				<li style="float:right"><a class="active" href="regpay.html">Register and Pay</a></li>
+			</ul>
+		</div>
+
+			<br>
+		
+		<!-- Registration Form -->
+		<!-- Extra info from: https://www.w3schools.com/howto/howto_js_password_validation.asp -->
+		<div id="register">
+			<h2> Register </h2>
+			<form name="registration" onsubmit="return validateRegistrationForm()" method="post">
+				<!-- Name -->
+				<label for="f_name"><b>Name</b></label>
+				<input type="text" class="input" name="f_name" placeholder="Enter full name" required oninvalid="this.setCustomValidity('Please fill in your name.')" oninput="this.setCustomValidity('')">
+				<!-- Username -->
+				<label for="f_user"><b>Username</b></label>
+				<input type="text" class="input" name="f_user" placeholder="Enter username" required oninvalid="this.setCustomValidity('Please enter a username.')" oninput="this.setCustomValidity('')">
+				<!-- Email -->
+				<label for="f_email"><b>Email</b></label>
+				<input type="text" class="input" name="f_email" placeholder="e.g. john@example.com" required oninvalid="this.setCustomValidity('Please enter your email address.')" oninput="this.setCustomValidity('')">
+				<!-- Birthdate -->
+				<label for="f_bday"><b>Birthday</b></label>
+				<input type="date" class="input" name="f_bday" required oninvalid="this.setCustomValidity('Enter your birthdate.')" oninput="this.setCustomValidity('')">
+				<!-- Password -->
+				<label for="f_password"><b>Password</b></label>
+				<input type="password" class="input" id="psw" name="f_password" placeholder="Enter password" required oninvalid="this.setCustomValidity('Password must be at least 8 characters long, have one number and one letter.')" oninput="this.setCustomValidity('')">
+				<input type="password" class="input" name="f_password2" placeholder="Repeat password">
+				<!-- Submit Form -->
+				<input type="submit" value="Register Now">
+			</form>
+		</div>
+		
+		<!-- Pay -->
+		<div id="pay">
+			<h2> Pay </h2>
+			<form name="payment" onsubmit="return validatePaymentForm()" method="post">
+				<!-- Name on Card -->
+				<label for="c_name"><b>Name on Card</b></label>
+				<input type="text" class="input" name="c_name" placeholder="e.g. Pete Nickelson" required oninvalid="this.setCustomValidity('Enter the name on your card.')" oninput="this.setCustomValidity('')">
+				<!-- Card Number -->
+				<label for="c_number"><b>Credit Card Number</b></label>
+				<input type="text" class="input" name="c_number" placeholder="e.g. 1111-2222-3333-4444" required oninvalid="this.setCustomValidity('Enter your credit card number.')" oninput="this.setCustomValidity('')">
+				<!-- Card Expiry -->
+				<label for="c_exp"><b>Card Expiry</b></label>
+				<input type="text" class="input" name="c_exp" placeholder="e.g. mm/yy" required oninvalid="this.setCustomValidity('Enter the expiry date of your card.')" oninput="this.setCustomValidity('')">
+				<!-- CVV number -->
+				<label for="c_cvv"><b>CVV</b></label>
+				<input type="text" class="input" name="c_cvv" placeholder="e.g. 000" required oninvalid="this.setCustomValidity('Enter the CVV number of your card.')" oninput="this.setCustomValidity('')">
+				<!-- Submit Form -->
+				<input type="submit" value="Pay Now">
+			</form>
+		</div>
+		
+			<br>
+			
+		<!-- Footer -->
+		<div id="footer">
+			<ul>
+				<li class="facebook">JayaCo New Zealand</li>
+				<li class="email">jayaconz@gmail.com</li>
+				<li class="instagram">@jayaconz</li>
+				<li class="twitter">@jayaconz</li>
+				<li class="mobile">1800-333-4949</l1>
+			</ul>
+		</div>
+
+	</body>
+</html> 

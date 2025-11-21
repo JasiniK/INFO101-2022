@@ -1,0 +1,391 @@
+/* This is your CSS file. You will use this file to style your HTML pages */
+/* Style for the Navigation Bar */
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444443;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navigation li {
+    display: inline;
+    float: left;
+}
+
+#navigation li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
+    background-color: #333333;
+    color: white;
+}
+
+/* Highlights the page that the user is currently on */
+.active {
+    background-color:  #FFA852;
+    color: black;
+}
+
+.inactive {
+    color: white;
+}
+
+/* Style for the logo */
+.logo {
+    width: 20%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25%;
+}
+
+/* Style for title of each page */
+.title {
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: #777;
+}
+
+/* Style for the main body of the webpages */
+body {
+    font-family: "Arial";
+}
+
+#products, #faq {
+    background-color: #FFBD7B;
+}
+
+#index {
+    background-image: url("index bg.png");
+    background-size: 100% 100%;
+}
+
+#regpay {
+    background-image: url("regpay bg.png");
+    background-size: 100% 100%;
+}
+
+#aim,
+#expectation,
+#creators {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    background-color: #FFA852;
+    border-radius: 10px;
+}
+
+#creators {
+    margin-bottom: 20px;
+}
+
+#aim h2,
+#expectation h2,
+#creators h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#creators dl {
+    text-align: center;
+}
+
+/* Style for the footer of the webpage */
+/* Using Flex box for the footer: https://www.w3schools.com/css/css3_flexbox.asp */
+#footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #444443;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: initial;
+    size: 20px;
+    overflow: hidden;
+}
+
+#footer li {
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.facebook { 
+    list-style-image: url("fb icon.jpg");
+}
+
+.instagram {
+    list-style-image: url("ig icon.png");
+}
+
+.twitter {
+    list-style-image: url("twt icon.png");
+}
+
+.mobile {
+    list-style-image: url("phone icon.png");
+}
+
+.email {
+    list-style-image: url("email icon.png");
+}
+
+/* Style for the products page */
+#products_intro {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#products_intro p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.product_title {
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+#women_clothing,
+#men_clothing {
+    background-color: #FFA852;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 1475px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#men_clothing {
+    margin-bottom: 5%;
+}
+
+#women_clothing ul,
+#men_clothing ul {
+    list-style-type: none;
+}
+
+#women_clothing li, 
+#men_clothing li {
+    vertical-align: center;
+    display: inline;
+    float: left;
+    margin-left: 95px;
+    margin-right: 90px;
+    
+}
+
+#women_clothing img, 
+#men_clothing img {
+    height: 210px;
+    width: 100px;
+}
+
+#women_clothing li img:hover,
+#men_clothing li img:hover {
+    margin-top: -22px;
+    margin-left: -20px;
+    height: 252px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.green {
+    color: green;
+}
+
+/* Dropdowns for each product */
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5,
+.dropdown6, .dropdown7, .dropdown8, .dropdown9, .dropdown10 {
+    position: relative;
+    display: inline-block;
+}
+
+.hidden1, .hidden2, .hidden3, .hidden4, .hidden5,
+.hidden6, .hidden7, .hidden8, .hidden9, .hidden10 {
+    display: none;
+    position: absolute;
+    background-color: #FFA852;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.hidden1 p, .hidden2 p, .hidden3 p, .hidden4 p, .hidden5 p,
+.hidden6 p, .hidden7 p, .hidden8 p, .hidden9 p, .hidden10 p {
+    display: block;
+    text-align: center;
+}
+
+.dropdown1:hover .hidden1,.dropdown2:hover .hidden2, .dropdown3:hover .hidden3,
+.dropdown4:hover .hidden4, .dropdown5:hover .hidden5, .dropdown6:hover .hidden6,
+.dropdown7:hover .hidden7, .dropdown8:hover .hidden8, .dropdown9:hover .hidden9,
+.dropdown10:hover .hidden10 {
+    display: block;
+}
+
+#reset {
+    margin-bottom: 10%;
+}
+
+/* Style for FAQ page, using clickable dropdowns: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+/* Using Flex box for the FAQ page: https://www.w3schools.com/css/css3_flexbox.asp */
+.faq_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq_question {
+    background-color: #FFA852;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.faq_answer {
+    margin: auto;
+    width: 60%;
+    padding: 30px 20px;
+    background-color: #444443;
+    display: none;
+    overflow: hidden;
+    color: white;
+}
+
+.faq_answer p {
+    text-align: center;
+    display: block;
+}
+
+.faq_question:hover{
+    background-color: #333333;
+    color: white; 
+}
+
+.faq_question:after {
+    /*Unicode character for black down-pointing triangle */
+    /* https://www.w3schools.com/charsets/ref_utf_geometric.asp */
+    content: '\25BC'; 
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Feedback Style on FAQ page*/
+#feedback h2{
+    text-align: center;
+}
+
+#feedback textarea {
+    margin-left: 20%;
+    width: 60%;
+    
+    background-color: #FFA852;
+    border: none;
+}
+
+#feedback button {
+    margin-left: 20%;
+    background-color: #333333;
+    color: white;
+    border: none;
+}
+
+#feedback p {
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+
+/* Style for Registration and Pay Forms */
+#register, #pay {
+    width: 40%;
+    height: 50%;
+    background-color: rgba(51, 51, 51, 0.8);
+    float: left;
+    margin: 5% 5% 5% 5%;
+    border-radius: 10px;
+}
+
+#register h2, #pay h2 {
+    text-align: center;
+    color: white;
+}
+
+#register ::placeholder, #pay ::placeholder{
+    color: #DDDDDD;
+}
+
+#register input, #pay input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    font-size: 110%;
+    outline: none;
+}
+
+#register .input, #pay .input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid;
+    border-color: #FFA852;
+    background-color: rgba(68, 68, 68, 0);
+    color: white;
+}
+
+#register label, #pay label{
+    color: #FFA852;
+    margin-left: 10%;
+}
+
+#register input[type=submit], #pay input[type=submit] {
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+#register input[type=submit]:hover, #pay input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+
+
+
+

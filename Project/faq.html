@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html><!-- Do NOT put any content outside of the HTML tags-->
+	<head>
+		<title>JayaCo - FAQs</title>
+		<link rel= "stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"></script>
+	</head>
+	
+    <!-- All content visible on the webpage will be inside the body tags below-->
+	<body id="faq"> 
+		<!-- Navigation Bar -->
+		<div id="navigation">
+			<ul>
+				<li><a class="inactive" href="index.html">Home</a></li>
+				<li><a class="inactive" href="products.html">Products</a></li>
+				<li><a class="active" href="faq.html">FAQ</a></li>
+				<li style="float:right"><a class="inactive" href="regpay.html">Register and Pay</a></li>
+			</ul>
+		</div>
+
+			<br>
+		
+		<!-- FAQ -->
+		<h1 class="title">Frequently Asked Questions</h1>
+		<div class="faq_div">
+		
+			<!-- First Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(1)"> How are suppliers chosen? </h2>
+				<p id="faqAns1" class="faq_answer"> We run thorough background checks on supply chains to examine their work ethics, employee wage and working conditions. Furthermore, JayaCo choose suppliers that have the same aim as us that is the make ethically produced and environmentally sustainable fashion. </p>
+			</div>
+			
+			<!-- Second Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(2)"> How is the Carbon Footprint calculated? </h2>
+				<p id="faqAns2" class="faq_answer"> Based on metrics such as shipping distance from production site to main distribution centre and the amount of waste produced. By applying a factor to both of these metrics according to their environmental impact a carbon footprint score is calculated for each item of clothing. This score is used to calculate your carbon footprint according to the number of clothing you wish to purchase. </p>
+			</div>
+			
+			<!-- Third Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(3)"> Why should I care about my carbon footprint? </h2>
+				<p id="faqAns3" class="faq_answer"> During these recent years, there has been an increase in climate change and pollution around the world. Doing our part, even if really small, matters. That is why we created this platform to raise awareness and help give people the choice of sustainability. </p>
+			</div>
+			
+			<!-- Forth Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(4)"> Are all the clothes on sale ethnically sourced? </h2>
+				<p id="faqAns4" class="faq_answer"> JayaCo makes sure that ourselves, the suppliers and companies that we associate with treat their employees with respect, providing them with good working conditions and at least a living wage. We also ensure that our products are sold using fair-trade principles. </p>
+			</div>
+			
+			<!-- Fifth Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(5)"> Do you use eco-friendly packaging? </h2>
+				<p id="faqAns5" class="faq_answer"> All our products are packed using 100% biodegradable packaging. We want to show that we indeed do practice what we preach. </p>
+			</div>
+			
+			<!-- Sixth Question -->
+			<div class="faq">
+				<h2 class="faq_question" onclick="faqDropdown(6)"> How do I contact you if I have any questions? </h2>
+				<p id="faqAns6" class="faq_answer"> There are many ways you can contact us. We are on popular social media platforms such as Facebook, Twitter and Instagram. You can also flick us an email or call our landline. The details can be found below (also on each page of the website). Our landline is responsive from 8am-8pm on weekdays and 10am-5pm on weekends. </p>
+			</div>
+		</div>
+		
+			<br>
+			
+		<!-- Feedback Form -->
+		<div id="feedback">
+			<h2> Feedback or Questions: </h3>
+			<textarea id="message" placeholder="Type your feedback or question here..."></textarea>
+				<br>
+			<button type="button" onclick="submitFeedback()">Submit</button>
+			<p id="sent"></p>
+		</div>
+	
+			<br>
+		
+		<!-- Page Footer -->
+		<div id="footer">
+			<ul>
+				<li class="facebook">JayaCo New Zealand</li>
+				<li class="email">jayaconz@gmail.com</li>
+				<li class="instagram">@jayaconz</li>
+				<li class="twitter">@jayaconz</li>
+				<li class="mobile">1800-333-4949</l1>
+			</ul>
+		</div>
+
+	</body>
+</html> 
